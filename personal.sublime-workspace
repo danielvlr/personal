@@ -1,0 +1,198 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 138.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Snippet: Get Elements"
+			],
+			[
+				"Package Control: intal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/dan/.config/sublime-text-2/Packages/AngularJS/AngularJS-js-completions.sublime-settings",
+		"/home/dan/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/dan/desenv/personal/modules/articles/client/config/articles.client.config.js",
+		"/home/dan/desenv/personal/modules/core/client/services/menus.client.service.js",
+		"/home/dan/desenv/personal/modules/articles/client/views/create-article.client.view.html",
+		"/home/dan/.config/sublime-text-2/Packages/AngularJS/AngularJS-completions.sublime-settings",
+		"/home/dan/.config/sublime-text-2/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/home/dan/.config/sublime-text-2/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/home/dan/desenv/personal/personal.sublime-project",
+		"/home/dan/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/dan/desenv/personal/modules/articles/client/views/edit-article.client.view.html",
+		"/home/dan/desenv/personal/config/config.js",
+		"/home/dan/desenv/personal/config/lib/app.js",
+		"/home/dan/desenv/personal/README.md",
+		"/home/dan/desenv/personal/.gitignore",
+		"/home/dan/desenv/personal/package.json",
+		"/home/dan/desenv/personal/node_modules/node-restful/examples/movies/index.js",
+		"/home/dan/desenv/personal/.editorconfig"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/dan/desenv/personal/node_modules/node-restful",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"find",
+			"sear",
+			"file\n\n\n\n\n\n\nfile",
+			"*",
+			"alt",
+			"atl+/",
+			"*",
+			"mogo",
+			"mongoose",
+			"config"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true
+}

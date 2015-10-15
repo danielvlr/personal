@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" itemscope="itemscope" itemtype="http://schema.org/Product">
+{% include '../includes/head.html' %}
+	<body class="bg-1" style>
+		<div class="mm-page">
+		    <!-- Wrap all page content here -->
+		    <div id="wrap">
+		      <!-- Make page fluid -->
+		    	<div class="row">
+			        <!-- Fixed navbar -->
+	                <div class="navbar navbar-default navbar-fixed-top navbar-transparent-black mm-fixed-top" data-ng-include="'/system/views/header.html'" role="navigation" id="navbar"></div>
+
+			        <!-- Page content -->
+			        <div id="content" class="col-md-12">
+		    			{% block content %}{% endblock %}
+		    		</div>
+		    	</div>    	
+		      <!-- Make page fluid-->
+		    </div>
+	    </div>
+	    <!-- Wrap all page content end -->
+	    {% include '../includes/foot.html' %}
+	</body>
+</html>
+
+
+
