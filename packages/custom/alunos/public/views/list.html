@@ -1,0 +1,94 @@
+<!-- page header -->
+<div class="pageheader">
+	<h2><i class="fa"></i> Alunos	<span></span></h2>
+</div>
+
+<!-- /page header -->		
+<p ng-show="mensagem.texto">
+	{{mensagem.texto}}
+</p>
+
+
+
+
+<div class="main">
+
+<!-- row -->
+    <div class="row">
+
+        <!-- col 6 -->
+		<div class="col-md-12">
+
+
+
+                <!-- tile -->
+            <section class="tile color transparent-black rounded-corners">
+
+
+
+                <!-- tile header -->
+				<div class="tile-header">
+                	<div>
+                      <p>
+                      	<a class="btn btn-primary" href="/alunos/create">Incluir+</a>
+                      </p>
+                    </div>
+                    
+
+             		<div class="input-group search-bar col-sm-6">
+						<input type="text" ng-model="filtro" class="form-control" name="search" placeholder="">
+		    			<span class="input-group-btn">
+		    				<button class="btn btn-default" type="button" ng-click="buscaAlunos()"><i class="fa fa-search"></i> Pesquisar</button>
+		    			</span>
+					</div>
+                </div>
+                <!-- /tile header -->
+
+                <!-- tile body -->
+                <div class="tile-body">
+
+
+	                <div class="table-responsive">
+	                    <table  class="table table-datatable table-custom" id="basicDataTable" ng-show="alunos.length>0">
+	                        <thead>
+	                          <tr>
+	                            <th class="sort-alpha">Nome</th>
+	                            <th class="sort-alpha">Email</th>
+								<th >Ação</th>	                            
+	                          </tr>
+	                    	</thead>
+	                    	<tbody>
+
+								<tr ng-repeat="aluno in alunos">
+									<td>
+										<a ng-href="#/aluno/{{aluno._id}}">{{aluno.nome}}</a>
+									</td>
+									<td>
+										{{aluno.email}}
+									</td>
+									<td>
+										<button class="btn btn-primary btn-sm" ng-click="remove(aluno)">
+											Remover
+										</buttom>
+									</td>
+								</tr>
+	                    	</tbody>
+	                    </table>	
+	                </div>
+
+                  </div>
+                  <!-- /tile body -->
+
+			</section>
+                <!-- /tile -->
+
+		</div>
+        <!-- /col 6 -->
+
+	</div>
+		<!-- /row -->
+</div>
+<!-- /main -->
+
+
+</div>
