@@ -22,7 +22,7 @@
 
 
                 <!-- tile -->
-            <section class="tile color transparent-black rounded-corners">
+            <section class="tile color transparent-black rounded-corners" >
 
 
 
@@ -36,16 +36,16 @@
                     
 
              		<div class="input-group search-bar col-sm-6">
-						<input type="text" ng-model="filtro" class="form-control" name="search" placeholder="">
+						<input type="text" ng-model="filtro" class="form-control" name="aluno.nome" placeholder="">
 		    			<span class="input-group-btn">
-		    				<button class="btn btn-default" type="button" ng-click="buscaAlunos()"><i class="fa fa-search"></i> Pesquisar</button>
+		    				<button class="btn btn-default" type="button" data-ng-click="find()"><i class="fa fa-search"></i> Pesquisar</button>
 		    			</span>
 					</div>
                 </div>
                 <!-- /tile header -->
 
                 <!-- tile body -->
-                <div class="tile-body">
+                <div class="tile-body" data-ng-controller="AlunosController" data-ng-init="find()">
 
 
 	                <div class="table-responsive">
@@ -59,17 +59,18 @@
 	                    	</thead>
 	                    	<tbody>
 
-								<tr ng-repeat="aluno in alunos">
+								
+								<tr data-ng-repeat="aluno in alunos">
 									<td>
-										<a ng-href="#/aluno/{{aluno._id}}">{{aluno.nome}}</a>
+										<a data-ng-href="/alunos/{{aluno._id}}">{{aluno.nome}}</a>
 									</td>
 									<td>
 										{{aluno.email}}
 									</td>
 									<td>
-										<button class="btn btn-primary btn-sm" ng-click="remove(aluno)">
-											Remover
-										</buttom>
+										<a class="btn" data-ng-click="remove(aluno);">
+								          <i class="btn btn-primary btn-sm"></i>
+								        </a>
 									</td>
 								</tr>
 	                    	</tbody>

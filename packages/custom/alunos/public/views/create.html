@@ -27,19 +27,19 @@
 						          {{mensagem.texto}}
 				          	</p>
 
-                    <form class="form-horizontal" role="form" parsley-validate ng-submit='salva()'>
+                    <form class="form-horizontal" role="form" no-validate data-ng-controller="AlunosController">
                       
                       <div class="form-group">
                         <label for="nome" class="col-sm-4 control-label">Nome Completo *</label>
                         <div class="col-sm-8">
-                          <input type="text" class="form-control" id="nome" ng-model="aluno.nome" />
+                          <input type="text" class="form-control" id="nome" data-ng-model="aluno.nome" />
                         </div>
                       </div>
                       
                       <div class="form-group">
                         <label for="email" class="col-sm-4 control-label">Email *</label>
                         <div class="col-sm-8">
-                          <input type="email" class="form-control" id="email" ng-model="aluno.email" />
+                          <input type="email" class="form-control" id="email" data-ng-model="aluno.email" />
                         </div>
                       </div>
                       
@@ -48,11 +48,11 @@
                         <label class="col-sm-4 control-label">Sexo *</label>
                         <div class="col-sm-8">
                           <div class="radio radio-transparent">
-                            <input type="radio" name="rbsexo" id="rbsexomas" value="masculino" ng-model="aluno.sexo" />
+                            <input type="radio" name="rbsexo" id="rbsexomas" value="masculino" data-ng-model="aluno.sexo" />
                             <label for="rbsexomas">Masculino</label>
                           </div>
                           <div class="radio radio-transparent">
-                            <input type="radio" name="rbsexo" id="rbsexofem" value="feminino" ng-model="aluno.sexo" />
+                            <input type="radio" name="rbsexo" id="rbsexofem" value="feminino" data-ng-model="aluno.sexo" />
                             <label for="rbsexofem">Feminino</label>
                           </div>
                         </div>
@@ -64,7 +64,7 @@
                       <div class="form-group">
                         <label for="dataNascimento" class="col-sm-4 control-label">Data de Nascimento *</label>
                         <div class="col-sm-8">
-                          <input type="text" class="form-control" id="dataNascimento" placeholder="DD/MM/AAAA" ng-model="aluno.dataNascimento" />
+                          <input type="text" class="form-control" id="dataNascimento" placeholder="DD/MM/AAAA" data-ng-model="aluno.dataNascimento" />
                         </div>
                       </div>
 
@@ -73,14 +73,14 @@
                       <div class="form-group">
                         <label for="dataInicio" class="col-sm-4 control-label">Data do inicio *</label>
                         <div class="col-sm-8">
-                          <input type="text" class="form-control" id="dataInicio" placeholder="DD/MM/AAAA" ng-model="aluno.dataInicio" />
+                          <input type="text" class="form-control" id="dataInicio" placeholder="DD/MM/AAAA" data-ng-model="aluno.dataInicio" />
                         </div>
                       </div>
 
 
                       <div class="form-group form-footer">
                         <div class="col-sm-offset-4 col-sm-8">
-                          <button type="submit" class="btn btn-primary">Salvar</button>
+                          <button data-ng-click="create()" type="submit" class="btn btn-primary">Salvar</button>
                           <button type="reset" class="btn btn-default">Limpar</button>
                         </div>
                       </div>

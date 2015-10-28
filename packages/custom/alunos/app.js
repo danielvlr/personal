@@ -11,7 +11,8 @@ var Alunos = new Module('alunos');
  * All MEAN packages require registration
  * Dependency injection is used to define required modules
  */
-Alunos.register(function(app, auth, database) {
+
+Alunos.register(function(app, auth, database, swagger) {
 
   //We enable routing. By default the Package Object is passed to the routes
   Alunos.routes(app, auth, database);
